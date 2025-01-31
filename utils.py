@@ -11,7 +11,7 @@ def clean_text(text):
     text = re.sub(r'[^a-zA-Z0-9 ]', '', text)
     # Replace multiple spaces with a single space
     text = re.sub(r'\s{2,}', ' ', text)
-    # Trim leading and trailing whitespace
+  
     text = text.strip()
     # Remove extra whitespace
     text = ' '.join(text.split())
